@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Love Calculator</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Bebas+Neue&family=Changa+One:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+TC:wght@200..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/f4efa66e1d.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .image{
+                width: 60px;
+            }
+            
+            .welcome-background{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            #welcome{
+                font-size: 45px;
+                font-family: "Quicksand";
+                color: #a7002a;
+                font-weight: 400;
+                margin-top:170px;
+            }
+            #calc{
+                font-size: 18px;
+                font-family: "Quicksand";
+                color: black;
+                font-weight: 400;
+            }
+
+            #welcome-box{
+                position: relative; 
+                z-index: 2;
+                width: 350px;
+                height: 570px;
+                background-color: whitesmoke;
+                padding: 20px;
+                margin: 0 auto;
+                margin-top: 50px;
+                border-radius: 15px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            #start{
+                background-color: transparent;
+                border: solid 1px #a7002a;
+                border-radius: 30px;
+                height: 45px;
+                width: 185px;
+                transition: background-color 1s;
+                position: relative;
+                bottom: -60px;
+                margin-top: 10px;
+                font-size: 14px;
+                font-family: 'Quicksand';
+            }
+
+            #start:hover{
+                background: linear-gradient(#a7002a, #800020);
+                color: white;
+            }
+
+            #code{
+                background-color: #a7002a;
+                color: white;
+                border: solid 1px #a7002a;
+                border-radius: 30px;
+                height: 45px;
+                width: 185px;
+                transition: background-color 0.3s;
+                position: relative;
+                bottom: -80;
+                margin-top: 10px;
+            }
+
+            #code:hover{
+                background-color: white;
+                color: #a7002a;
+            }
+            #welcome-box img{
+                position: absolute;
+            }
+        </style>
+
+
+
+        <div class="welcome-background">
+            <div id="welcome-box">
+                <img style="margin: 0;" src="New_Valentine_s_Day_templates_for_Instagram_Stories-removebg-preview.png" alt="">
+                <div id="welcome">WELCOME</div>
+                <div id="calc">Love Calculator</div>
+                <a style="text-decoration: none; color: black;" href="index.html">
+                    <button id="start">Start</button>
+                </a>
+                
+                <a style="text-decoration: none; color: black;" href="index.html">
+                    <button id="start">Code</button>
+                </a>
+            </div>
+        </div>
+
+        <div id="content-container"></div>
+
+        <!-- <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                document.getElementById('start').addEventListener('click', () => {
+                    fetch('index.html') // Replace with the path to your HTML file
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error('Network response was not ok');
+                            }
+                            return response.text();
+                        })
+                        .then(data => {
+                            document.getElementById('content-container').innerHTML = data;
+                            // Optionally hide or remove the welcome box if needed
+                            document.querySelector('.welcome-background').style.display = 'none';
+                        })
+                        .catch(error => {
+                            console.error('There was a problem with the fetch operation:', error);
+                        });
+                });
+            });
+        </script> -->
+
+
+    </body>
+</html>
